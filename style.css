@@ -1,0 +1,106 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #c8c8d2, #2A2A40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 380px;
+    width: 100%;
+  }
+  
+  .calendar-card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .calendar-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Left: Date & Day (Dark Panel) */
+  .left-panel {
+    flex: 1;
+    background: #1E1E2F;
+    color: #EAEAEA;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #date {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  
+  #day {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+  }
+  
+  /* Right: Month & Year (Light Panel) */
+  .right-panel {
+    flex: 1;
+    background: #F4F5F7;
+    color: #1E1E2F;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #month {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #E29587;
+    text-transform: capitalize;
+  }
+  
+  #year {
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    opacity: 0.8;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 500px) {
+    .calendar-card {
+      flex-direction: column;
+    }
+  
+    .left-panel, .right-panel {
+      padding: 1.5rem;
+    }
+  
+    #date {
+      font-size: 3.2rem;
+    }
+  
+    #month {
+      font-size: 1.6rem;
+    }
+  }
+  
