@@ -11,7 +11,7 @@ const totalMonths = ["january","february","march","april","may","june","july","a
 ,"september","october","november","december"];
 
 
-date.innerHTML = (today.getDate()<10?"0":"") + today.getDate();
-day.innerHTML = weekDays[today.getDay()];
-month.innerHTML = totalMonths[today.getMonth()];
-year.innerHTML = today.getFullYear();
+date.innerHTML = (TodayDate.getDate()<10?"0":"") + TodayDate.getDate();
+day.innerHTML = weekDays[TodayDate.getDay()];
+month.innerHTML = totalMonths[TodayDate.getMonth()];
+year.innerHTML = TodayDate.getFullYear();
